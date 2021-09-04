@@ -26,7 +26,7 @@ require("express-async-errors");
 
 	console.info("Conexão estabelecida com o MongoDB Atlas!");
 
-	const db = client.db("blue_db");
+	const db = client.db("db_rickmorty");
 	const personagens = db.collection("personagens");
 
 	const getPersonagensValidas = () => personagens.find({}).toArray();
