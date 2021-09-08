@@ -24,7 +24,7 @@ const mongodb = require("mongodb");
 
   //[POST] CREATE PERSONAGEM
 
-  router.post("/create", async (req, res) => {
+  router.post("/", async (req, res) => {
     const objeto = req.body;
 
     if (!objeto || !objeto.nome || !objeto.imagemUrl) {

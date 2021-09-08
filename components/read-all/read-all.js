@@ -25,7 +25,7 @@ const mongodb = require("mongodb");
 
   //[GET] GET ALL PERSONAGENS
 
-  router.get("/all", async (req, res) => {
+  router.get("/", async (req, res) => {
     res.send(await getPersonagensValidas());
   });
 })();

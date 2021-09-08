@@ -76,11 +76,11 @@ const apagar = require("./components/delete/delete");
 
   //[GET] getPersonagemById
 
-  app.use("/personagens", readById);
+  app.use("/personagens/read-by-id", readById);
 
   //[POST] Adiciona personagem novo
 
-  app.use("/personagens", create);
+  app.use("/personagens/create", create);
 
   //[PUT] Atualizar personagem
 
